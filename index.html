@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фінансовий помічник</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Alertify/alertify.core.css">
+    <link rel="stylesheet" href="./Alertify/alertify.default.css">
+</head>
+<body>
+    <header>
+        <a class="menu" href="#mainPage">Головна</a>
+        <a class="menu" href="#calculator">Калькулятор</a>
+        <a class="menu" href="#savings">Накопичення</a>
+        <!-- <a class="menu" href="#newSavingLink">Додати</a> -->
+        <a class="menu" href="#aboutUs">Про нас</a>
+    </header>
+
+    <main>
+
+        <section class="panel mainPage" id="mainPage">
+            <div class="text text1">
+                <h2 class="welcome">Ласкаво просимо</h2>
+                <p>до нашого проекту, де Ви зможете <b>запланувати купівлю</b> своєї мрії та при цьому притримуватись правил <b>фінансової грамотності</b>.</p>
+            </div>
+            
+            <div class="discribe">
+                <p>Нашою метою було створити <b>простий та зручний</b> сайт для щоденного користування, який допоможе зібрати власні накопичення та <b>інвестувати</b> їх в своє майбутнє.</p>
+                <br><p>Якщо вам легко користуватися даним сайтом, ми свого добились :)</p>
+            </div>
+        </section>
+
+        <section class="panel calculator" id="calculator">
+            <!-- <div class="left"></div> -->
+            <div class="right">
+                <div id="main" class="main">
+                    <div class="convertor">
+                        <div class="text">
+                        <h2 class="calculatorTitle">Конвертер валют</h2>
+                  </div>
+                   <div class="calculatorInputBar">
+                    <input type="number" id="amount" placeholder="Сума" class="calculatorInput">
+                    <div class="calculatorSelect">
+                        <select id="fromCurrency">
+                        <option class="calculatorOption" value="USD">USD</option>
+                        <option class="calculatorOption" value="EUR">EUR</option>
+                        <option class="calculatorOption" value="UAH">UAH</option>
+                        <!-- <option value="CNY">CNY</option> -->
+                    </select>
+                    <select id="toCurrency">
+                        <option value="UAH">UAH</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <!-- <option value="CNY">CNY</option> -->
+                    </select>
+                    </div>
+                    
+                    <button id="convert">Конвертувати</button>
+                    <h3 id="result"></h3></div></div>
+                    </div>
+            </div>
+        </section>
+        
+        <section class="panel savings" id="savings">
+            
+            <!-- <h2>У Вас немає накопичень :(</h2> -->
+
+            <!-- <div class="userSaving">
+                <div class="savingInfo">
+                    <h2 class="savingTitle">Назва зберігання</h2>
+                        <input type="text" class="addMoneyInput" placeholder="Додати">
+                        <div class="buttons">
+                            <div class="addMoneyButton" id="addMoneyButton">Додати</div>
+                            <div class="deleteButton" id="deleteButton">Видалити</div>
+                        </div>
+                </div>
+                <div class="savingBar">
+                    <input type="text" class="bar" id="bar1">
+                </div>
+                
+            </div> -->
+
+            <div class="userSaving">
+                <div class="newSaving" id="newSaving">+</div>
+            </div>
+            
+
+        </section>  
+
+        <!-- <section class="panel newSavingSection" id="newSavingLink"> -->
+            <!-- <div class="newSaving" id="newSaving">+</div>     -->
+        <!-- </section> -->
+        
+    </main>
+
+    <section class="sideBox"></section>
+
+    <footer class="panel" id="aboutUs">
+        <div class="footerTitle">
+            <h2 class="teamTitle">Зелені змії</h2>
+        </div>
+        <div class="owners Valera">
+            <img class="ownerImg" src="./Valera.jpg" alt="Valera.jpg">
+            <p class="ownerSpeech">Полюбляю Robocode та все, що з ним зв`язано. Дуже подобаються уроки веб-розробки з моїм улюбленим викладачем. Також люблю поспати.</p>
+        </div>
+        <div class="owners Rostik">
+            <img class="ownerImg" src="./Rostislav.jpg" alt="Rostislav.jpg">
+            <p class="ownerSpeech">Я Луценко Ростислав потрапив у робокод разом з Валериєм и захопився програмуванням, вчуся в КФКТЕ КАІ, сподобалося що тут уроки веселі та інформативні.</p>
+        </div>
+        <div class="owners UHJILEHEP">
+            <img class="ownerImg" src="./20250406_225515.jpg" alt="UHJILEHEP">
+            <p class="ownerSpeech">Дуже полюбляю викладацьку діяльність. Навчаюсь в КПІ на аспірантурі. Викладач математики в гімназії та ваш друг в Robocode.</p>
+        </div>
+        <div class="owners Robocode">
+            <img src="./images.jpg" alt="Robocode">
+            <p class="ownerSpeech">Найкраща школа робототехніки та програмування любить своїх учнів та надихає на нові перемоги. З нами вчитись весело, корисно і цікаво!</p>
+        </div>
+        <div class="plashka">by Valera, Rosik, UHJILEHEP</div>
+    </footer>
+
+    <!--  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="./jquery.knob.min.js"></script>
+    <script src="./Alertify/alertify.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js"></script> -->
+    <script src="js.js"></script>
+</body>
+</html>
